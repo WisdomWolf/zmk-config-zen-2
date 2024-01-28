@@ -9,13 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define CLMK    0
-#define QWTY    1
-#define NAV_L   2
-#define NUM_L   3
-#define SYM_L   4
-#define MED_L   5
-#define RSE     6
+#define HDWN    0
+#define CLMK    1
+#define QWTY    2
+#define NAV_L   3
+#define NUM_L   4
+#define SYM_L   5
+#define MED_L   6
+#define RSE     7
 
 / {
   chosen {
