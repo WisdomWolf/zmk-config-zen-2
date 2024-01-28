@@ -57,6 +57,15 @@
                         bindings = <&mo>, <&kp>;
                 };
 
+                skq: sticky_key_quick_release {
+                        compatible = "zmk,behavior-sticky-key";
+                        #binding-cells = <1>;
+                        bindings = <&kp>;
+                        release-after-ms = <1000>;
+                        quick-release;
+                        ignore-modifiers;
+                };
+
 
         };
 
@@ -66,14 +75,14 @@
                 default_layer {
                         label = "HANDWN";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  G  |  H  |  P  |  X  |   |  /  |  ,   |  .  |  '  |  Z  | ESC  |
+// |  `   |  Q  |  G  |  H  |  P  |  X  |   |  /  |  ,   |  .  |  '  |  Z  |  \   |
 // | BKSP |  C  |  S  |  N  |  T  |  V  |   |  ;  |  A   |  E  |  I  |  M  |  J   |
 // | SHFT |  B  |  F  |  L  |  D  |  K  |   |  -  |  U   |  O  |  Y  |  W  | SHFT |
 //                    | ESC | TAB | R   |   | SPC | RET  | DEL |
                         bindings = <
-   &kp TAB   &kp Q      &kp G      &kp H         &kp P          &kp X         &kp FSLH    &kp COMMA       &kp DOT     &kp SQT    &kp Z      &kp ESC
+   &kp GRAVE &kp Q      &kp G      &kp H         &kp P          &kp X         &kp FSLH    &kp COMMA       &kp DOT     &kp SQT    &kp Z      &kp BSLH
    &kp BSPC  &hm LGUI C &hm LALT S &hm LCTRL N   &hm LSHFT T    &kp V         &kp SEMI    &hm RSHFT A     &hm RCTRL E &hm LALT I &hm RGUI M &kp J
-   &kp LSHFT &kp B      &kp F      &kp L         &kp D          &kp K         &kp MINUS   &kp U           &kp O       &kp Y      &kp W      &stkm RSHFT RSHFT
+   &kp LSHFT &kp B      &kp F      &kp L         &kp D          &kp K         &kp MINUS   &kp U           &kp O       &kp Y      &kp W      &skq RSHFT
                                    &lm SYM_L ESC &lm NUM_L TAB  &lm NAV_L R   &lm RSE RET &lm MED_L SPACE &kp DEL
                         >;
                 };
