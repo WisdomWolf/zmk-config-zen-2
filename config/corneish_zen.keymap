@@ -63,12 +63,27 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        label = "HANDWN";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  Q  |  G  |  H  |  P  |  X  |   |  /  |  ,   |  .  |  '  |  Z  | ESC  |
+// | BKSP |  C  |  S  |  N  |  T  |  V  |   |  ;  |  A   |  E  |  I  |  M  |  J   |
+// | SHFT |  B  |  F  |  L  |  D  |  K  |   |  -  |  U   |  O  |  Y  |  W  | SHFT |
+//                    | ESC | BSPC| TAB |   | SPC | RET  | DEL |
+                        bindings = <
+   &kp TAB   &kp Q      &kp G      &kp H         &kp P          &kp X         &kp FSLH    &kp COMMA       &kp DOT     &kp SQT    &kp Z      &kp ESC
+   &kp BSPC  &hm LGUI C &hm LALT S &hm LCTRL N   &hm LSHFT T    &kp V         &kp SEMI    &hm RSHFT A     &hm RCTRL E &hm LALT I &hm RGUI M &kp J
+   &kp LSHFT &kp B      &kp F      &kp L         &kp D          &kp K         &kp MINUS   &kp U           &kp O       &kp Y      &kp W      &stkm RSHFT RSHFT
+                                   &lm SYM_L ESC &lm NUM_L BSPC &lm NAV_L TAB &lm RSE RET &lm MED_L SPACE &kp DEL
+                        >;
+                };
+
+                colemak_layer {
                         label = "COLMAK";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |  Y  |  ;  | ESC  |
 // | BKSP |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E  |  I  |  O  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | SHFT |
-//                    | GUI | LWR | TAB |   | SPC | RET  | ALT |
+//                    | ESC | BSPC| TAB |   | SPC | RET  | DEL |
                         bindings = <
    &kp TAB   &kp Q      &kp W      &kp F         &kp P          &kp G         &kp J       &kp L           &kp U       &kp Y      &kp SEMI   &kp ESC
    &kp BSPC  &hm LGUI A &hm LALT R &hm LCTRL S   &hm LSHFT T    &kp D         &kp H       &hm RSHFT N     &hm RCTRL E &hm LALT I &hm RGUI O &kp SQT
