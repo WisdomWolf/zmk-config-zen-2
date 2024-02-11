@@ -83,7 +83,7 @@
    &kp GRAVE &kp Q      &kp G      &kp H         &kp P          &kp X         &kp FSLH    &kp COMMA       &kp DOT     &kp SQT    &kp Z      &kp BSLH
    &kp BSPC  &hm LGUI C &hm LALT S &hm LCTRL N   &hm LSHFT T    &kp V         &kp SEMI    &hm RSHFT A     &hm RCTRL E &hm LALT I &hm RGUI M &kp J
    &kp LSHFT &kp B      &kp F      &kp L         &kp D          &kp K         &kp MINUS   &kp U           &kp O       &kp Y      &kp W      &skq RSHFT
-                                   &lm SYM_L ESC &lm NUM_L TAB  &lm NAV_L R   &lm RSE RET &lm MED_L SPACE &kp DEL
+                                   &lm SYM_L ESC &lm NUM_L R  &lm NAV_L TAB   &lm RSE RET &lm MED_L SPACE &kp DEL
                         >;
                 };
 
